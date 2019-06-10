@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let reg = /\{\{(.*)\}\}/g;
+        '这个字符串{{ab}}就是vue的规则'.replace(reg, (matched, value) => {
+          // 作用就是：取出正则表达式{{ab}}中的值ab
+       });
+    </script>
+</body>
+</html>
